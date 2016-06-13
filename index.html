@@ -1,38 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
   <head>
-    <meta charset="utf-8" />
-    <title>Restaurants in Amsterdam</title>
-    
+    <title>Restaurants</title>
   </head>
   <body>
-    <ul id="restaurants"></ul>
-    <script>
-    const restaurants = document.getElementById('restaurants');
-    const city = 'Amsterdam';
-    const start = 0;
-    const limit = 5;
+    <div id="root"></div>
+    <script src="/static/bundle.js">
 
-    fetch('https://api.pimmr.me', {
-      method: 'post',
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({
-       jsonrpc: '2.0',
-       method: "restaurant.getHighestRated",
-       params: [city, start, limit],
-       id: 0,
-      })
-    })
-    .then(response => response.json())
-    .then(json => json.result.forEach(restaurant => {
-      const li = document.createElement('li');
-      li.textContent = restaurant.name;
-      restaurants.appendChild(li);
-      console.log(restaurant)
-    }))
-    .catch(err => console.error(err));
     </script>
   </body>
 </html>

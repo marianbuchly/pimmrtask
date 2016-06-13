@@ -1,10 +1,7 @@
 import React from 'react';
-import Navigation from './Navigation';
-import './stylesheets/components.scss';
+import Navigation from './components/Navigation';
+import Restaurants from './components/Restaurants';
 import ReactDOM from 'react-dom';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import AppBar from 'material-ui/AppBar';
 import Utils from './lib/Utils';
 import ThemeManager from 'material-ui/lib/styles/theme-manager';
 import Theme from './lib/Theme';
@@ -14,7 +11,11 @@ import Theme from './lib/Theme';
 class App extends React.Component {
     render() {
         return (
-            <h1>Pimmr App</h1>
+            <div className="container">
+              <Navigation />
+              <h1>Pimmr App</h1>
+              <Restaurants />
+            </div>
         );
     }
 }
