@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from './components/Navigation';
 import Restaurants from './components/Restaurants';
+import Controls from './components/Controls';
 import ReactDOM from 'react-dom';
 import Utils from './lib/Utils';
 import ThemeManager from 'material-ui/lib/styles/theme-manager';
@@ -13,8 +14,8 @@ class App extends React.Component {
         return (
             <div className="container">
               <Navigation />
-              <h1>Pimmr App</h1>
-              <Restaurants />
+                <h1>Pimmr App</h1>
+              // <Restaurants />
             </div>
         );
     }
