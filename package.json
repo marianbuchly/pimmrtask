@@ -21,9 +21,11 @@
   },
   "homepage": "https://github.com/Pimmr/case#readme",
   "dependencies": {
+    "chai": "^3.5.0",
     "fbjs": "^0.2.1",
     "jquery": "^3.0.0",
     "material-ui": "^0.14.0",
+    "mocha": "^2.5.3",
     "react": "^0.14.8",
     "react-dom": "0.14.3",
     "react-materialize": "^0.14.4",
