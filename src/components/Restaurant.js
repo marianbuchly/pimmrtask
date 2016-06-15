@@ -1,4 +1,5 @@
 import React from 'react';
+import Controls from './Controls';
 
 class Restaurant extends React.Component {
 
@@ -6,7 +7,11 @@ class Restaurant extends React.Component {
     const restaurant = this.props.restaurant;
     return(
       <li>
-        { restaurant.name }
+        <div>
+          { restaurant.name }
+          { restaurant.city }
+
+          </div>
       </li>
     );
   }
