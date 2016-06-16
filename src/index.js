@@ -10,13 +10,10 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 injectTapEventPlugin();
 
 ReactDOM.render((
-  <div>
-    <App />
-      <Router history={browserHistory}>
-        <Route path="/" component={App}>
-          <IndexRoute component={Restaurants} />
-          <Route path='/restaurant' component={Restaurant}/>
-        </Route>
-      </Router>
-  </div>
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Restaurants} />
+      <Route path='/restaurant' component={Restaurant}/>
+    </Route>
+  </Router>
   ), document.getElementById('root'));
