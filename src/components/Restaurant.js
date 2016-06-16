@@ -10,9 +10,11 @@ class Restaurant extends React.Component {
         <div>
           { restaurant.name }
           { restaurant.city }
-
+          
           </div>
       </li>
+
+
     );
   }
 }

@@ -1,3 +1,7 @@
 html {
   font-family: 'Roboto', sans-serif;
+
 }
+
+/*li:nth-child(even) {color: #A00}
+li:nth-child(odd) {color: #000}*/
