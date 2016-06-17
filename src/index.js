@@ -13,7 +13,8 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Restaurants} />
-      <Route path='/restaurant' component={Restaurant}/>
+      <Route path='/restaurant/:restaurantId' component={Restaurant}/>
+
     </Route>
   </Router>
   ), document.getElementById('root'));

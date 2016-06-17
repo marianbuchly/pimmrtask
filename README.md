@@ -1,5 +1,7 @@
 # Pimmr development case
 
+###Assignment
+
 Penguin Pim has given you the task to build a small web frontend for his search to the perfect restaurant in Amsterdam.
 A backend is provided to you which returns the top restaurants in Amsterdam, an example is provided in `index.html`.
 
@@ -26,3 +28,13 @@ Additional API information:
 * The backend can return the same restaurants at different positions. You can ignore this behavior.
 
 Other than React, you have the freedom to choose any libraries you like. The application should load with `npm start` or a Docker run command.
+
+### Start 
+
+Install Dependencies:
+
+  npm install
+
+Start server:
+
+  npm start

@@ -1,6 +1,8 @@
 import React from 'react';
 import Restaurant from './Restaurant';
+// import CSS from './main.module.css';
 import { Link } from 'react-router';
+import Controls from './Controls';
 import {GridList, GridTile} from 'material-ui/lib/grid-list';
 import IconButton from 'material-ui/lib/icon-button';
 import StarBorder from 'material-ui/lib/svg-icons/toggle/star-border';
@@ -18,6 +20,7 @@ const styles = {
     overflowY: 'auto',
     marginBottom: 24,
     fontFamily: 'Roboto'
+    
   },
 };
 
@@ -61,25 +64,33 @@ class Restaurants extends React.Component {
     const restaurants = this.state.restaurants;
 
     return(
+      <div>
       <div style={styles.root}>
         <GridList
-          cols={5}
+          cols={1}
           cellHeight={200}
           style={styles.gridList}
         >
           {restaurants.map((restaurant) => {
             console.log(restaurant);
             return (<GridTile
-              key={restaurant.id}
+             key={restaurant.id}
               title={restaurant.name}
-              subtitle={<span>in <b>{restaurant.address.city}</b></span>}
+              subtitle={<span>in <b>{restaurant.address.city}</b><br>{restaurant.cuisines}</br></span>}
               actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
             >
               <img src={restaurant.photos[0].s3URL} />
             </GridTile>)
           })}
         </GridList>
-      </div>)
+      </div>
+      <div>
+
+         <Controls />
+
+       </div>
+     </div>
+  );
   }
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import CSS from './main.module.css';
 import Controls from './Controls';
 
 class Restaurant extends React.Component {
@@ -8,8 +9,10 @@ class Restaurant extends React.Component {
     return(
       <li>
         <div>
+          { restaurant.id }
           { restaurant.name }
           { restaurant.address.city }
+          { restaurant.cuisines }
 
           </div>
       </li>
